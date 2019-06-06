@@ -1,7 +1,7 @@
 const aws = require('aws-sdk');
 const s3 = new aws.S3({apiVersion: '2006-03-01'});
 const fs = require('fs');
-const unzip = require('node-unzip-2');
+const unzip = require('unzipper');
 const Promise = require('bluebird');
 const puppeteer = require('puppeteer');
 const config = require('./config');
